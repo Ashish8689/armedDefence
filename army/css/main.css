@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&family=Lora:ital,wght@1,500&family=Roboto:wght@700&family=Teko:wght@500&display=swap');
+
+html{
+	scroll-behavior: smooth;
+	overflow-x:hidden;
+}
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+
+[data-tab-content]{
+	display: none;
+}
+
+.active[data-tab-content]{
+	display: block;
+}
+
+.tabs{
+	margin: 0!important;
+	margin-top: 50px!important;
+	list-style: none;
+}
+
+.tab{
+	margin: 0!important;
+	display: inline-block;
+	padding: 10px 30px;
+	cursor: pointer;
+	color: black;
+	font-weight: 700;
+	border: 1px solid orange;
+}
+
+.tab.active{
+   background-color: orange;
+}
+
+.tab:hover{
+	background-color: orange;
+}
+
+.tab-content{
+	border-top: 2px solid orange;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 20px;
+}
+
+
+.menu{
+	position: absolute;
+	top: 0px;
+	right: 30px;
+	color: black;
+	display: none;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.logo{
+	display:block;
+	background: #40564a;
+}
+
+.logo .left,.right{
+	display: inline-block;
+}
+
+.logo  .army-logo{
+	width: 100%;
+	height: 80px;
+	margin-bottom: 10px;
+}
+
+.logo  img{
+	width: 100px;
+	height: 80px;
+	margin-bottom: 10px;
+}
+
+.logo .left{
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+
+.logo .right{
+	float: right;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+ .logo h1{
+    position: absolute;
+	margin-top: -80px;
+	margin-left: 120px;
+	font-size: 37px;
+	font-weight: bold;
+	color: #4458dc;
+	font-family: 'Roboto', serif;
+	text-transform: uppercase;
+}
+
+.logo h4{
+	position: absolute;
+	margin-top: -40px;
+	margin-left: 160px;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: 'Teko', serif;
+}
+
+
+/***************   Navbar  ***************/
+
+.navbar{
+	margin: 0;
+	padding: 0px!important;
+	background: #f7f7f7;
+	height: 55px;
+	line-height: 50px;
+	border-top: 4px solid #c05433;
+}
+
+.navbar ul{
+	padding: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	list-style:none;
+}
+
+.navbar ul li{
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+    box-sizing: border-box;
+	position: relative;
+	transition: .5s;
+	z-index: 1;
+	border-right: 1px solid #c05433;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-family: 'Roboto', serif;
+}
+.navbar ul li a:hover{
+	text-decoration: none;
+}
+
+.navbar ul li:hover{
+	background: #c05433;
+}
+.navbar ul li:hover a{
+	color: whitesmoke;
+}
+
+.navbar ul ul{
+	display: none;
+	position: absolute;
+	background-color: black;
+}
+
+.navbar ul li:hover > ul{
+	background: #c05433;
+	display:block;
+	z-index: 1;
+}
+
+.navbar ul li > ul li:hover{
+	background:#d3775d;
+}
+
+.navbar .fa-angle-right{
+	display: none!important;
+}
+
+.navbar ul ul ul{
+	top: 0;
+	left: 215px;
+}
+
+
+.hamburger{
+	margin-left: 20px;
+	display: none;
+}
+
+.hamburger div{
+	background-color: black;
+	width: 25px;
+	height: 3px;
+    margin: 2.5px 0;
+    transition: all .3s ease;
+}
+
+
+/* ***************  Theme ***************** */
+
+
+.theme{
+	padding:30px 0 50px 0;
+	text-align: center;
+}
+
+.theme h1{
+	font-weight: 700;
+}
+
+.theme p{
+	margin: 20px 0;
+}
+
+
+/* ****************    Joining image  ************************** */
+
+
+.info-image{
+	width: 100%;
+	max-width: 1200px;
+}
+
+/* *************    Footer secction   *************   */
+
+.footersection{
+	width: 100%;
+	height:auto;
+	margin-top: 0px;
+    background: #40564a;
+	position: relative;
+}
+
+.footer{
+	font-size: 16px;
+	color: #fff;
+	font-weight: bold;
+}
+
+span a{
+  color: white;
+}
+span a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+#mybtn{
+	display:none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	padding: 10px;
+	border-radius: 10px;
+	z-index:99;
+	border: none;
+	color: #fff;
+	transition: .3s;
+	background: black;
+	/* background:#00abff ; */
+}
+
+#mybtn:hover{
+	opacity: .5;
+	/* background: #606060; */
+}
+
+
+/* ***********  Navigation link  ******************* */
+
+
+@media(max-width: 768px){
+
+	body{
+		overflow-x:hidden; 
+	}
+
+	.army-logo{
+		width: 240px!important;
+	}
+
+
+	.menu{
+		display: block;
+	}
+
+	.navbar ul{
+		position: absolute;
+		top: 0%;
+		left: 0%;
+        width:250px;
+        height: 100vh;
+        display: block;
+		background-color: #f7f7f7;
+		z-index: 999;
+		margin-top: 46px;
+		align-items: center;
+		transform: translateX(-250px);
+		transition: transform 550ms;
+	}
+
+	.navbar ul li{
+		text-align: left;
+        padding: 0px 10px;
+		list-style: none;
+		font-size: 12px;
+		font-weight: bold;
+		cursor: pointer;
+		color: black;
+		border-bottom:1.5px solid black;
+		border-right: none;
+		font-family: 'Courgette', cursive;
+}   
+
+	.fa-angle-right{
+	  display: block!important;
+	  float: right;
+	  padding: 15px 0px;
+	  transition: .3s;
+}
+
+.navbar ul li:hover .fa-angle-right{
+	font-size: 15px!important;
+	font-weight: bold;
+	transform: rotate(90deg);
+}
+
+.navbar ul ul{
+	position: absolute;
+	margin-top: 0px;
+	left:500px;
+	width: 100%;
+	height: auto;
+}
+
+.navbar ul ul ul{
+	margin-top:0px;
+	left: 240.5px;
+}
+
+
+.hamburger{
+	display: block;
+	cursor: pointer;
+	z-index: 999;
+	transition: .2s ease-in;
+	/* position: fixed; */
+}
+
+.hamburger:hover{
+	opacity: .8;
+}
+
+/**********  navbar open from left side  ********** */
+	.nav-link.open{
+		transform: translateX(0%);
+	}
+
+	.carousel-item{
+		height: 300px;
+	}
+
+	.carousel-item img{
+		width: 100%;
+		height: 100%;
+	}
+
+
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-3px,4px);
+}
+.toggle .line2{
+	opacity: 0;
+}
+.toggle .line3{
+	transform: rotate(45deg) translate(-4px,-5px);
+}
+

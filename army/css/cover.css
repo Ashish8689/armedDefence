@@ -1,0 +1,170 @@
+  body{
+    overflow-x: hidden;
+  }
+
+/* *********  Universal Class */
+
+section {
+    padding: 50px;
+ }
+
+.title{
+      font-size: 30px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin:50px 0 30px 0;
+      color:#40564a;
+}
+
+.sub-title{
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-top:30px;
+      color: #0C155A;
+}
+
+.para{
+      font-size:16px;
+      font-weight:600!important;
+      color:#777777;
+      /* margin:20px; */
+}
+
+.title-head{
+      font-size: 20px;
+      font-weight: 500;
+      /* margin: 0!important; */
+      color:#4458dc;
+}
+
+
+
+/* ********    Location  File Css  *************** */
+
+  .port, 
+  .base,
+  .traning{
+    display: none;
+  }
+
+  .location{
+    margin:50px 0 ;
+    padding: 0 50px;
+  }
+
+  .buttons .btn{
+      padding:10px 20px;
+      border:1.5px solid black;
+      margin:0 5px;
+      border-radius: 12px;
+      color:black;
+      font-weight: 600;
+      font-size:16px;
+      text-transform: uppercase;
+      outline: none;
+  }
+
+  .buttons .btn:hover{
+      background:#31a0e0;
+      border-color: #31a0e0;
+      color:whitesmoke;
+  }
+
+  .text-container{ 
+     padding:100px 50px;  
+  }
+
+   
+  ul li{
+      list-style: none;
+      margin-left: 20px;
+  }
+
+  strong{
+      font-weight: 900;
+      color:black;
+  }
+
+  .close{
+    display:block;
+  }
+ 
+  .selector{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .color{
+    color: blue;
+  }
+
+  .rotate{
+    transform: rotate(90deg);
+    color: blue;
+  }
+
+  .selector .fa-angle-right{
+    display: inline-block!important;
+    margin-left: 5px;
+    transition: .3s;
+  }
+
+  table th{
+      color: white;
+      background-color:#40564a;
+      vertical-align: middle!important;
+      padding: 10px 20px!important;
+      font-size: 16px;
+      font-weight: 500!important;
+  }
+
+
+.main{
+    margin: 0;
+    padding: 0;
+}
+
+.main .cover img{
+    width: 100%;
+}
+
+  
+@media(max-width: 550px){
+      .main .cover img{
+            width: 100%;
+            height: 250px;
+      }
+
+      /* Location file */
+       .text-container{
+         padding: 0 20px;
+       }
+
+       section {
+         padding: 10px;
+      }
+} 
+
+
+    @media(max-width:768px){
+
+       .main .cover img{
+           width: 100%;
+           height: 250px;
+       }
+
+        section {
+         padding: 20px;
+      }
+    } 
+
+ @media screen and (min-width:769px) and (max-width: 900px){
+
+          section {
+            padding:20px;
+        }
+    }
+
+
